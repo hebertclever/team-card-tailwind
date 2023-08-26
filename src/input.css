@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+h3{
+    font-size:12px;
+    font-weight: 400;
+    font-family: 'PT Serif', serif;
+}
+
+
+p{
+   font-size: 18px;
+   font-weight: 400; 
+   font-family: 'Poppins', sans-serif;
+
+}
