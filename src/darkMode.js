@@ -3,19 +3,19 @@ const body = document.body;
 
 
 function applyTheme(theme) {
-    console.log("Applying theme:", theme);  // Adicionado para diagnóstico
+    console.log("Applying theme:", theme);  
     switch(theme) {
         case 'light':
             body.classList.remove('dark');
-            console.log("Removed dark class from body");  // Adicionado para diagnóstico
+            console.log("Removed dark class from body");  
             break;
         case 'dark':
             body.classList.add('dark');
-            console.log("Added dark class to body");  // Adicionado para diagnóstico
+            console.log("Added dark class to body"); 
             break;
         default:
             body.classList.remove('dark');
-            console.log("Removed dark class from body by default");  // Adicionado para diagnóstico
+            console.log("Removed dark class from body by default"); 
     }
 }
 
