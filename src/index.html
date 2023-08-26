@@ -9,64 +9,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins&display=swap"
         rel="stylesheet">
+        
 </head>
 
-<body class="bg-[#D5E1EF] flex items-center justify-center h-screen">
+<body class=" dark:bg-gray-900 bg-white flex items-center justify-center h-screen">
 
-    <div class="max-w-[900px] flex flex-col items-center">
-        <div class="flex w-full">
-            <div class="w-[50%]">
-                <h1 class="text-2xl font-semibold font-serif">The creative crew</h1>
-            </div>
+    
+
+    <div class="max-w-[900px] flex flex-col items-center pr-16">
+        <select id="themeSelector" class="p-2 bg-gray-200 rounded dark:bg-gray-600">
+            <option value="system">Modo Padrão (do Sistema)</option>
+            <option value="light">Modo Claro</option>
+            <option value="dark">Modo Escuro</option>
+        </select>
+        
+
+        <div class="w-full p-5 grid grid-cols-1 md:grid-cols-2">
+            <div class="">
+                <h1 class="text-4xl font-semibold mb:text-3xl font-serif mr-4 dark:text-white">The creative crew</h1>
+            </div>            
             <div>
-                <h2>Who we are</h2>
-                <p>We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
+                <h2 class="mt-8 md:mt-0 dark:text-white">Who we are</h2>
+                <p class="text-sm md:text-base dark:text-white">We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
             </div>
         </div>
 
-        <div class=" w-full flex flex-row h-[560px] mt-9 ">
 
 
-            <div class=" w-64 h-[360px] flex box-border mr-14">
-                <div class="w-[360px]">
+        <div class="grid grid-cols-2 h-[560px] gap-8 ml-14 md:grid-cols-3">
+
+
+            <div class=" w-[100%] h-[360px] flex box-border ">
+                <div class="w-[100%]">
                     <img src="/public/images/photo1.png" alt="">
-                    <h1 class="mt-2">Bill Mahoney</h1>                                 
+                    <h1 class="mt-2 dark:text-white">Bill Mahoney</h1>                                 
                 </div>
                 <div class="w-[20px] h-[360px] flex items-start justify-center">
-                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4">PRODUCT OWNER</h3>
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">PRODUCT OWNER</h3>
                 </div>                
             </div>
 
-            <div class=" w-64 h-[560px] flex box-border pt-[100px] mr-14">
-                <div class="w-[360px]">
+            <div class=" w-[100%] h-[560px] flex box-border pt-[100px]">
+                <div class="w-[100%]">
                     <img src="/public/images/photo2.png" alt="">
-                    <h1 class="mt-2">Bill Mahoney</h1>                                 
+                    <h1 class="mt-2 dark:text-white">Saba Cabrera</h1>                                 
                 </div>
-                <div class="w-[20px] h-[360px] flex items-start justify-center">
-                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4">PRODUCT OWNER</h3>
+                <div class="w-[20px] h-[100%] flex items-start justify-center">
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">ART DIRECTOR</h3>
                 </div>                
             </div>
-
-            <div class=" w-64 h-[360px] flex box-border">
-                <div class="w-[360px]">
+            <div class=" w-[100%] h-[360px] flex box-border ">
+                <div class="w-[100%]">
                     <img src="/public/images/photo3.png" alt="">
-                    <h1 class="mt-2">Bill Mahoney</h1>                                 
+                    <h1 class="mt-2 dark:text-white">Shae Le</h1>                                 
                 </div>
                 <div class="w-[20px] h-[360px] flex items-start justify-center">
-                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4">PRODUCT OWNER</h3>
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">TECH LEAD</h3>
                 </div>                
             </div>
-        </div>
-        
 
-        
+            <div class=" w-[100%] h-[560px] flex box-border pt-[100px] md:pt-0">
+                <div class="w-[100%]">
+                    <img src="/public/images/photo4.png" alt="">
+                    <h1 class="mt-2 dark:text-white">Skylah Lu</h1>                                 
+                </div>
+                <div class="w-[20px] h-[100%] flex items-start justify-center">
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">UX DESIGNER</h3>
+                </div>                
+            </div>
+            <div class=" w-[100%] h-[360px] flex box-border pt-[100px]">
+                <div class="w-[100%]">
+                    <img src="/public/images/photo5.png" alt="">
+                    <h1 class="mt-2 dark:text-white">Griff Richards</h1>                                 
+                </div>
+                <div class="w-[20px] h-[360px] flex items-start justify-center">
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">DEVELOPER</h3>
+                </div>                
+            </div>
+
+            <div class=" w-[100%] h-[560px] flex box-border">
+                <div class="w-[100%]">
+                    <img src="/public/images/photo6.png" alt="">
+                    <h1 class="mt-2 dark:text-white">Stan John</h1>                                 
+                </div>
+                <div class="w-[20px] h-[100%] flex items-start justify-center">
+                    <h3 class="transform -rotate-90 whitespace-nowrap pr-28 pt-4 dark:text-white">DEVELOPER</h3>
+                </div>                
+            </div>
+
+            
+        </div>         
 
 
 
 
     </div>
 
+    <script src="/src/darkMode.js"></script>
+
 </body>
 
 
 </html>
+
+
